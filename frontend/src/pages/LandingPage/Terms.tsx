@@ -6,7 +6,7 @@ function Terms() {
     const [terms, setTerms] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        fetch("https://fakturera-i7to.onrender.com//terms")
+        fetch("https://fakturera-i7to.onrender.com/terms")
           .then((response) => response.json())
           .then((data) => {
             const m = data.terms.split("_");
