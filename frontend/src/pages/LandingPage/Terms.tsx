@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 function Terms() {
     const [terms, setTerms] = useState([]);
     const navigate = useNavigate();
+    console.log("thus")
     useEffect(() => {
         fetch("https://fakturera-i7to.onrender.com/terms")
           .then((response) => response.json())
